@@ -1,9 +1,9 @@
 import { test } from 'qunit';
-import moduleForStompAcceptance from '../../tests/helpers/module-for-stomp-acceptance';
+import moduleForAcceptance from 'dummy/tests/ember-cli-stomp/module-for-acceptance';
 import SockJS from 'sockjs';
 import Stomp from 'stompjs';
 
-moduleForStompAcceptance('Acceptance | stomp');
+moduleForAcceptance('Acceptance | stomp');
 
 test('#subscribe, mocking stomp queue', function(assert){
   var message = {
