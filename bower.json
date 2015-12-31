@@ -10,7 +10,8 @@
     "jquery": "^1.11.3",
     "loader.js": "^3.5.0",
     "qunit": "~1.20.0",
-    "sockjs-client": "~1.0.3"
+    "sockjs-client": "~1.0.3",
+    "sinonjs": "~1.17.1"
   },
   "resolutions": {
     "ember": "2.2.0"
