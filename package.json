@@ -20,6 +20,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
+    "ember-browserify": "1.1.4",
     "ember-cli": "2.2.0-beta.1",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-content-security-policy": "0.4.0",
@@ -37,7 +38,10 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3",
-    "ember-try": "~0.0.8"
+    "ember-sinon": "0.3.0",
+    "ember-sinon-qunit": "1.0.0",
+    "ember-try": "~0.0.8",
+    "stompjs": "^2.3.3"
   },
   "keywords": [
     "ember-addon"

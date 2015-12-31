@@ -24,3 +24,11 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+
+## TODO:
+
+*  extract vendor stuff to proper wrappers
+*  better examples
+*  docs to explain how to use other stomp features in ember-cli
+
