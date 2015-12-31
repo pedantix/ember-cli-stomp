@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-stomp",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "An addon for using STOMP with Sockets for Ember CLI",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,14 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedantix/ember-cli-stomp.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Shaun Hubbard",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
