@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-stomp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An addon for using STOMP with Sockets for Ember CLI",
   "directories": {
     "doc": "doc",

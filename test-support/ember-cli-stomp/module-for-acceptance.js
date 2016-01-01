@@ -38,9 +38,7 @@ export default function(name, options = {}) {
 
 function stomperTemplate(){
   return {
-    connect(){
-      console.log('STOMP CLIENT Connected in : TESTING MODE');
-    },
+    connect(){},
     subscriptions: {},
     subscribe(channel, callback){
       this.subscriptions[channel] = callback; 
