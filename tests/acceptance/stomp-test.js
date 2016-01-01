@@ -21,6 +21,7 @@ test('#subscribe, mocking stomp queue', function(assert){
 
 function StompChat() {
   const stompClient = Stomp.over(new SockJS('http://localhost:8080/websocket'));
+  stompClient.connect({}, ()=>{});
   this.messages = [];
 
   stompClient.subscribe("/queue/tests", message => {
@@ -70,6 +71,7 @@ test('#sendMessage, calling subscription stringify', function(assert){
 
 function StompJSONChat() {
   const stompClient = Stomp.over(new SockJS('http://localhost:8080/websocket'));
+  stompClient.connect({}, ()=>{});
   this.messages = [];
 
   stompClient.subscribe("/queue/tests", message => {

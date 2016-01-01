@@ -15,18 +15,16 @@ export default function(name, options = {}) {
       if (options.beforeEach) {
         options.beforeEach.apply(this, arguments);
       }
-
-      this.sendMessage = function(channel, body){
-        const subscription = this.stomper.subscriptions[channel];
-        if(Ember.isPresent(subscription)){
-          const message = JSON.stringify(body);
-          subscription({"body": message});
-        } else {
-          Ember.assert(`there is no subscription for "${channel}"`);
-        }
+    },
+    sendMessage(channel, body){
+      const subscription = this.stomper.subscriptions[channel];      
+      if(Ember.isPresent(subscription)){
+        const message = JSON.stringify(body);
+        subscription({"body": message});
+      } else {
+        Ember.assert(`there is no subscription for "${channel}"`);
       }
     },
-
     afterEach() {
       destroyApp(this.application);
       this.stub.restore(); 
@@ -40,6 +38,9 @@ export default function(name, options = {}) {
 
 function stomperTemplate(){
   return {
+    connect(){
+      console.log('STOMP CLIENT Connected in : TESTING MODE');
+    },
     subscriptions: {},
     subscribe(channel, callback){
       this.subscriptions[channel] = callback; 
