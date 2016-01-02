@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-stomp",
-  "version": "0.0.4",
-  "description": "An addon for using STOMP with Sockets for Ember CLI",
+  "version": "0.0.6",
+  "description": "An addon for using STOMP with WebSockets for Ember CLI",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -33,7 +33,6 @@
     "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-qunit": "^1.1.0",
     "ember-cli-release": "0.2.8",
-    "ember-cli-sockjs": "1.0.0",
     "ember-cli-sri": "^1.2.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.2.1",
@@ -42,15 +41,16 @@
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3",
     "ember-sinon": "0.3.0",
-    "ember-sinon-qunit": "1.0.0",
     "ember-try": "~0.0.8",
-    "stompjs": "^2.3.3"
+    "ember-cli-sockjs": "1.0.0"
   },
   "keywords": [
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-sinon-qunit": "1.0.0",
+    "ember-cli-babel": "^5.1.5",
+    "stompjs": "^2.3.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
